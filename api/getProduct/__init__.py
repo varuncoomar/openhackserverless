@@ -16,7 +16,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
             name = req_body.get('productId')
 
     if name:
-        return func.HttpResponse(f"The product name for your product id {name} is Starfruit Explosion.")
+        return func.HttpResponse(f"The product name for your product id {name} is Starfruit Explosion")
     else:
         return func.HttpResponse(
              "AVACADO, It is a scam fruit!!!.",
